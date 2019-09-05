@@ -1,0 +1,4 @@
+Tensorflow 1.4
+librosa
+scikit-learn
+Python 3.x

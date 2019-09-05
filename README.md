@@ -114,5 +114,24 @@ Ever heard of a spectrogram? It’s a 2D plot between time and frequency where e
 
 The right features to extract from audio depends on the use case we are working with.
 
-## Understanding the Problem Statement for our Speech-to-Text Project
+## Understanding the Problem Statement for our Speech Recognition Project
 
+Tensorflow Speech Recognition Challenge was a Kaggle competition organised by Google Brain  to use the Speech Commands Dataset to build an algorithm that understands simple spoken commands. https://www.kaggle.com/c/tensorflow-speech-recognition-challenge
+
+### Models used
+
+1. A variant of Convolutional LSTM (https://arxiv.org/pdf/1610.00277.pdf)
+2. LSTM-L (https://arxiv.org/pdf/1711.07128.pdf)
+3. C-RNN (https://arxiv.org/pdf/1711.07128.pdf)
+4. GRU-L (https://arxiv.org/pdf/1711.07128.pdf)
+5. Resnet
+
+### Prediction
+
+The final model was a ensemble 13 models. Weighted Averaging and Stacking was used to generate the final predictions.
+
+### Aknowledgements
+
+1. ML-KWS-for-MCU (https://github.com/ARM-software/ML-KWS-for-MCU)
+2.  Very Deep Convolutional Neural Network for Robust Speech Recognition (https://arxiv.org/pdf/1610.00277.pdf)
+3. Speech Commands Dataset (https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html)

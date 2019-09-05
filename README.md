@@ -74,25 +74,51 @@ For example, an audio signal is an analog one since it is a continuous represent
 
 ![](assets/6.gif)
 
-Wondering how we are going to store the audio signal since it has an infinite number of samples? Sit back and relax! We will touch on that concept in the next section.
-
 ***What is sampling the signal and why is it required?***
 
+An audio signal is a continuous representation of amplitude as it varies with time. Here, time can even be in picoseconds. That is why an audio signal is an analog signal.
 
+Analog signals are memory hogging since they have an infinite number of samples and processing them is highly computationally demanding. Therefore, we need a technique to convert analog signals to digital signals so that we can work with them easily.
 
+***Sampling the signal*** is a process of converting an analog signal to a digital signal by selecting a certain number of samples per second from the analog signal.
 
+I really like the below illustration. It depicts how the analog audio signal is discretized and stored in the memory:
 
+![](assets/7.jpg)
 
+The key thing to take away from the above figure is that we are able to reconstruct an almost similar audio wave even after sampling the analog signal since I have chosen a high sampling rate. The sampling rate or sampling frequency is defined as the number of samples selected per second. 
 
+## Different Feature Extraction Techniques for an Audio Signal
 
+The first step in speech recognition is to extract the features from an audio signal which we will input to our model later. So now, l will walk you through the different ways of extracting features from the audio signal.
 
+***Time-domain***
 
+Here, the audio signal is represented by the amplitude as a function of time. In simple words, it is a plot between amplitude and time. The features are the amplitudes which are recorded at different time intervals.
 
+![](assets/8.gif)
 
+The limitation of the time-domain analysis is that it completely ignores the information about the rate of the signal which is addressed by the frequency domain analysis.
 
+***Frequency domain***
 
+In the frequency domain, the audio signal is represented by amplitude as a function of frequency. Simply put – it is a plot between frequency and amplitude. The features are the amplitudes recorded at different frequencies.
 
+![](assets/9.gif)
 
+The limitation of this frequency domain analysis is that it completely ignores the order or sequence of the signal which is addressed by time-domain analysis.
 
+***We can get the time-dependent frequencies with the help of a spectrogram.***
 
+Ever heard of a spectrogram? It’s a 2D plot between time and frequency where each point in the plot represents the amplitude of a particular frequency at a particular time in terms of intensity of color. In simple terms, the spectrogram is a spectrum (broad range of colors) of frequencies as it varies with time. 
+
+![](assets/10.png)
+
+The right features to extract from audio depends on the use case we are working with.
+
+## Understanding the Problem Statement for our Speech-to-Text Project
+
+We might be on the verge of having too many screens around us. It seems like every day, new versions of common objects are “re-invented” with built-in wifi and bright touchscreens. A promising antidote to our screen addiction is voice interfaces. 
+
+TensorFlow recently released the Speech Commands Datasets. It includes 65,000 one-second long utterances of 30 short words, by thousands of different people. We’ll build a speech recognition system that understands simple spoken commands.
 

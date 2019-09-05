@@ -1,4 +1,4 @@
-# Speech to Text
+# Speech Recognition
 
 ## Table of Contents
 
@@ -8,9 +8,7 @@
 
 * Different Feature Extraction Techniques from an Audio Signal
 
-* Understanding the Problem Statement for our Speech-to-Text Project
-
-* Implementing the Speech-to-Text Model in Python
+* Understanding the Problem Statement for our speech recognition poject
 
 ## A Brief History of Speech Recognition through the Decades
 
@@ -117,8 +115,4 @@ Ever heard of a spectrogram? It’s a 2D plot between time and frequency where e
 The right features to extract from audio depends on the use case we are working with.
 
 ## Understanding the Problem Statement for our Speech-to-Text Project
-
-We might be on the verge of having too many screens around us. It seems like every day, new versions of common objects are “re-invented” with built-in wifi and bright touchscreens. A promising antidote to our screen addiction is voice interfaces. 
-
-TensorFlow recently released the Speech Commands Datasets. It includes 65,000 one-second long utterances of 30 short words, by thousands of different people. We’ll build a speech recognition system that understands simple spoken commands.
 

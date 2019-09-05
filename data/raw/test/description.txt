@@ -1,0 +1,2 @@
+here should be test dataset which you can download from:
+https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data

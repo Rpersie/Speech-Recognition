@@ -1,0 +1,2 @@
+this is 10 % sample from raw (main) dataset:
+it will recreated if you execute 01 Init.ipynb

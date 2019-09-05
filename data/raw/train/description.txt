@@ -1,0 +1,2 @@
+here should be train dataset which you can download from:
+https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data

@@ -65,7 +65,7 @@ class Dataset:
         sample_size=int(sample_ratio*len(wav_list))
         chosen_wavs=np.random.choice(wav_list,sample_size)
         for c in chosen_wavs:
-            splt=c.split('/')
+            splt=c.split('\\')
             folder_name=splt[-2]
             file_name=splt[-1]
             save_path=os.path.join(sample_dir,'train','audio',folder_name,file_name)
@@ -79,7 +79,7 @@ class Dataset:
         sample_size=int(sample_ratio*len(wav_list))
         chosen_wavs=np.random.choice(wav_list,sample_size)
         for c in chosen_wavs:
-            splt=c.split('/')
+            splt=c.split('\\')
             file_name=splt[-1]
             save_path=os.path.join(sample_dir,'test','audio',file_name)
             copy2(c,save_path)

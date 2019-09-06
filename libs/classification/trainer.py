@@ -1,6 +1,5 @@
 # Cognitbit Solutions LLP
-#
-# Author: Subhojeet Pramanik
+
 # ==============================================================================
 """
 Universal Trainer Script. Responsible for loading, creating checkpoints and supervised training on data given logits and

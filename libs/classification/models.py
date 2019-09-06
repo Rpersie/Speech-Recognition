@@ -1,6 +1,5 @@
 # Cognitbit Solutions LLP
-#
-# Author: Subhojeet Pramanik
+
 # ==============================================================================
 """Model definitions for simple speech recognition.
     create_conv_model: Basic Convolutional Model

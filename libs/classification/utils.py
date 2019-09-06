@@ -1,6 +1,5 @@
 # Cognitbit Solutions LLP
-#
-# Author: Subhojeet Pramanik
+
 # ==============================================================================
 """
 This script contains a basic template for:
